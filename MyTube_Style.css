@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #320b42;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #382765e4;
+  border-bottom: 2px solid #9f0cda;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  font-size: 35px;
+  color: #ff4d4d;
+}
+
+
+.content {
+  padding: 20px;
+  margin-top: 80px;  
+}
+
+
+.player {
+  width: 60%;
+  aspect-ratio: 16 / 9;
+    margin: 0 auto 30px;
+    background: #b174d695;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+
+}
+
+#videoFrame {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #930404;
+}
+
+#placeholder {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+ 
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+.video-card {
+  
+  border-radius: 10px;
+  padding: 12px;
+  background: #b174d695;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.video-card input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.buttons button:hover {
+  background: #1d4ed8;
+}
+
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #382765e4;
+  color: #93c5fd;
+}
+
+.footer-links p {
+  font-size: 14px;
+}
+
+.footer a {
+  color: #225bd6;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* for mobile*/
+@media (max-width: 600px) {
+
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar h2 {
+    font-size: 24px;
+  }
+
+  .content {
+    margin-top: 70px;
+  }
+
+  #placeholder {
+    font-size: 18px;
+  }
+
+  .buttons button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+body {
+  background: #1e0b2e;
+}
+
+.navbar {
+  background: #2a0f3f;
+}
+
+.video-card {
+  background: #3b1a5a;
+}
+
+.buttons button {
+  background: #3b82f6;
+}
+
+.footer {
+  background: #2a0f3f;
+}
