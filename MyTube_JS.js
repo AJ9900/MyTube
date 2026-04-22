@@ -95,3 +95,6 @@ window.onload = function () {
     }
   });
 };
+function openNotes() {
+    window.open("https://drive.google.com/drive/folders/1dnNJc0xrt04tpPaVonKEDlUvfs5dOsVQ?usp=drive_link", "_blank");
+}
